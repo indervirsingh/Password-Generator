@@ -1,0 +1,11 @@
+
+Todo:
+  ☐  Create a custom layout using the starter code (HTML, CSS)
+
+  ✔  Program functions to work properly (JS) @done(21-01-11 15:26)
+
+  ☐  Make sure password generator meets the requirements
+    ✔ Must be between 8 and 128 characters @done(21-01-11 15:26)
+    - Allowed character types: lowercase, uppercase, numeric, special characters (" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~")
+    - Must contain at least one character
+    ✔ Once password is generated an alert must be sent which displays it @done(21-01-11 15:26)
