@@ -38,7 +38,7 @@ function generatePassword() {
     alert("You will be asked " + passwordLength + " prompts to determine the password.");
     // This loop: asks the user for the char type at each iteration and updates the password accordingly
     for (let i = 0; i < passwordLength; i++) {
-        
+
         // Store user input for character type
         var currentCharacter = prompt("Please enter the type of character for the password: 'c' for capital letter, 'l' for lowercase letter, 'n' for a number, 's' for a special character");
 
