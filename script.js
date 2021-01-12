@@ -11,33 +11,46 @@ function writePassword() {
 
 function generatePassword() {
 
+    // Generated password
     var password = "";
+
+    // Set of characters organized by type
     const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
-    const capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const numbers = "0123456789";
     const specialCharacters = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
     // This loop is for: error handling password length
+    var passwordNotWithinBounds = true;
     while (passwordNotWithinBounds) {
 
         // Store the user input
-        var pwlength = parseInt(prompt('How many chars?'));
+        var passwordLength = parseInt(prompt('How many chars?'));
 
         // Check if it meets our length requirement
-        if ((pwlength < 8) || (pwlength > 128)) {
+        if ((passwordLength < 8) || (passwordLength > 128)) {
             alert("Please select between 8 - 128 characters!");
-          } 
-        else {
+        } else {
             passwordNotWithinBounds = false;
         };
     }
 
     // This loop: asks the user for the char type at each iteration and updates the password accordingly
-    for (let i = 0; i < pwlength; i++) {
-        alert("You will be asked " + pwlength + " prompts to determine the password.");
+    for (let i = 0; i < passwordLength; i++) {
+        alert("You will be asked " + passwordLength + " prompts to determine the password.");
         var currentCharacter = prompt("Please enter the type of character for the password: 'c' for capital letter, 'l' for lowercase letter, 'n' for a number, 's' for a special character");
+
         // This loop is for: error handling password character type
-        var 
+        var incorrectCharacterType = true;
+        while (incorrectCharacterType) {
+            if (currentCharacter != 'c' || currentCharacter != 'l' || currentCharacter != 'n' || currentCharacter != 's') {
+                alert("PLEASE ENTER VALUES 'c', 'l', 'n', 's' ONLY");
+            } else {
+                incorrectCharacterType = false;
+            }
+
+            currentCharacter = prompt("Please enter the type of character for the password: 'c' for capital letter, 'l' for lowercase letter, 'n' for a number, 's' for a special character");
+        }
         switch (currentCharacter) {
             case 'c':
                 password += capitalLetters.charAt(Math.floor(Math.random() * capitalLetters.length));
@@ -52,7 +65,6 @@ function generatePassword() {
                 password += specialCharacters.charAt(Math.floor(Math.random() * specialCharacters.length));
                 break;
         }
-        // password += characterSet.charAt(Math.floor(Math.random() * characterSet.length));
     }
 
     console.log(password);
