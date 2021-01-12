@@ -41,7 +41,6 @@ function generatePassword() {
         
         // Store user input for character type
         var currentCharacter = prompt("Please enter the type of character for the password: 'c' for capital letter, 'l' for lowercase letter, 'n' for a number, 's' for a special character");
-        alert(typeof currentCharacter);
 
         // This loop is for: error handling password character type
         var incorrectCharacterType = true;
@@ -73,7 +72,7 @@ function generatePassword() {
         }
     }
 
-    console.log(password);
+    return password;
 
 }
 

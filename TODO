@@ -6,6 +6,7 @@ Todo:
 
   ☐  Make sure password generator meets the requirements
     ✔ Must be between 8 and 128 characters @done(21-01-11 15:26)
-    - Allowed character types: lowercase, uppercase, numeric, special characters (" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~")
-    - Must contain at least one character
-    ✔ Once password is generated an alert must be sent which displays it @done(21-01-11 15:26)
+    ✔ Allowed character types: lowercase, uppercase, numeric, special characters (" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~") @done(21-01-11 16:31)
+    ✔ Must contain at least one character @done(21-01-11 16:31)
+    ✔ Once password is generated an alert must be sent which console logs it @done(21-01-11 15:26)
+    ✔ Display onto the html page @done(21-01-11 16:49)
