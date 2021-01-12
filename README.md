@@ -7,6 +7,5 @@ How it works:
 
 Source Files:
     -   index.html
-    ![Screenshot](/Assets/button.png)
     -   script.js
     -   style.css
