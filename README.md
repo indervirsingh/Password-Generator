@@ -1,7 +1,7 @@
 # Password-Generator
 
 ## Try me out!
-*   <a href="indervirsingh.github.io/Password-Generator/">LIVE-DEMO</a>
+*   <a href="https://indervirsingh.github.io/Password-Generator/" target="_blank">LIVE-DEMO</a>
 
 ### Table Of Contents
 *   [HTML](/index.html)
