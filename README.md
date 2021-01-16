@@ -16,7 +16,7 @@
 
     2.  Then will be asked how long the password should be.
 ![Screenshot-2](/Assets/howManyCharacters.png)
-`
+
     3.  Then again prompted for each character selected, which TYPE they would prefer (special, capital, lowercase, number).
 ![Screenshot-3](/Assets/characterType.png)
 
